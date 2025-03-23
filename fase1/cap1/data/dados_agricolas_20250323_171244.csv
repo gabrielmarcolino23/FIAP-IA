@@ -1,0 +1,35 @@
+Cultura,Area,Numero_Ruas,Comprimento_Rua,Insumo,Quantidade
+Café,3241.80,13,31.94,Fungicida,0.57
+Café,3241.80,13,31.94,Fertilizante NPK,1.17
+Café,5648.52,5,84.93,Herbicida,0.81
+Café,5648.52,5,84.93,Fertilizante NPK,1.79
+Café,5648.52,5,84.93,Inseticida,0.43
+Café,5648.52,5,84.93,Fungicida,0.55
+Soja,9626.52,41,97.13,Herbicida,0.61
+Soja,9626.52,41,97.13,Inseticida,0.44
+Soja,9626.52,41,97.13,Fungicida,0.71
+Soja,9626.52,41,97.13,Fertilizante NPK,1.83
+Soja,7213.15,33,18.48,Fungicida,0.79
+Soja,7213.15,33,18.48,Fertilizante NPK,1.17
+Soja,7213.15,33,18.48,Inseticida,0.86
+Soja,7213.15,33,18.48,Herbicida,0.81
+Soja,7646.10,30,26.28,Fertilizante NPK,1.47
+Soja,7646.10,30,26.28,Herbicida,1.21
+Soja,7646.10,30,26.28,Inseticida,0.72
+Soja,5106.29,50,77.67,Fungicida,0.92
+Soja,5106.29,50,77.67,Fertilizante NPK,0.92
+Café,3154.87,13,69.45,Fertilizante NPK,1.15
+Café,3154.87,13,69.45,Inseticida,0.48
+Café,3154.87,13,69.45,Herbicida,0.38
+Café,3154.87,13,69.45,Fungicida,0.72
+Soja,4381.08,5,78.84,Fertilizante NPK,1.41
+Soja,4381.08,5,78.84,Fungicida,0.93
+Soja,4381.08,5,78.84,Herbicida,1.43
+Soja,4381.08,5,78.84,Inseticida,0.84
+Soja,9138.17,16,33.23,Fungicida,0.90
+Soja,9138.17,16,33.23,Inseticida,0.66
+Soja,9138.17,16,33.23,Fertilizante NPK,1.90
+Soja,9138.17,16,33.23,Herbicida,0.73
+Soja,7613.65,50,50.51,Fungicida,0.79
+Soja,7613.65,50,50.51,Inseticida,0.59
+Soja,7613.65,50,50.51,Herbicida,0.73

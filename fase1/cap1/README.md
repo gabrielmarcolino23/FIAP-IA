@@ -38,9 +38,34 @@ O sistema oferece um menu interativo com as seguintes opções:
    - Gerenciamento completo de insumos
 4. Deletar dados
    - Remoção de culturas
-5. Sair do programa
+5. Exportar dados para análise estatística
+   - Gera arquivo CSV com dados formatados
+6. Sair do programa
+
+### Análise Estatística (R)
+O sistema inclui um script R (`analise_estatistica.R`) que realiza análises estatísticas dos dados exportados:
+
+#### Estatísticas Calculadas
+- Por Cultura:
+  - Média e desvio padrão da área
+  - Média e desvio padrão do número de ruas
+  - Média e desvio padrão do comprimento das ruas
+- Por Insumo:
+  - Média e desvio padrão das quantidades
+
+#### Gráficos Gerados
+1. `area_por_cultura.png`: Boxplot mostrando a distribuição de área por cultura
+2. `quantidade_insumos.png`: Gráfico de barras mostrando quantidade de insumos por cultura
 
 ## Estrutura do Projeto
+
+### Diretórios
+- `fase1/cap1/data/`: Diretório onde são armazenados os arquivos CSV exportados
+- `fase1/cap1/`: Diretório principal do projeto
+  - `farmtech_solutions.py`: Sistema principal em Python
+  - `analise_estatistica.R`: Script de análise estatística em R
+  - `gerar_dados_teste.py`: Script para gerar dados de teste
+  - `README.md`: Documentação do projeto
 
 ### Classes Principais
 - `Cultura`: Representa uma cultura agrícola
@@ -50,15 +75,29 @@ O sistema oferece um menu interativo com as seguintes opções:
   - Lista de culturas
   - Cálculos de área
   - Operações CRUD (Criar, Ler, Atualizar, Deletar)
+  - Exportação de dados para CSV
 
 ## Como Executar
 
+### Sistema Python
 1. Certifique-se de ter Python 3.6 ou superior instalado
 2. Execute o arquivo `farmtech_solutions.py`:
    ```bash
    python fase1/cap1/farmtech_solutions.py
    ```
 3. Siga as instruções do menu interativo
+
+### Análise Estatística (R)
+1. Certifique-se de ter R instalado
+2. Instale as bibliotecas necessárias:
+   ```R
+   install.packages(c("tidyverse", "stats"))
+   ```
+3. Exporte os dados do sistema Python (opção 5 do menu)
+4. Execute o script R:
+   ```bash
+   Rscript fase1/cap1/analise_estatistica.R
+   ```
 
 ## Exemplo de Uso
 
@@ -78,6 +117,30 @@ O sistema oferece um menu interativo com as seguintes opções:
    - Editar insumos existentes
    - Remover insumos
 
+### Análise Estatística
+1. Use a opção 5 do menu Python para exportar os dados (serão salvos em `fase1/cap1/data/`)
+2. Execute o script R para gerar as análises
+3. Verifique os resultados no terminal e os gráficos gerados
+
 ## Requisitos
 - Python 3.6 ou superior
-- Módulos padrão do Python (math, typing) 
+- R (para análise estatística)
+- Módulos Python: math, typing, csv, datetime
+- Pacotes R: tidyverse, stats
+
+### Geração de Dados de Teste
+O sistema inclui um script (`gerar_dados_teste.py`) para gerar dados de teste automaticamente:
+
+1. Execute o script:
+   ```bash
+   python fase1/cap1/gerar_dados_teste.py
+   ```
+
+2. O script irá gerar:
+   - 10 culturas aleatórias (Café e Soja)
+   - Áreas entre 100 e 10000 m²
+   - 5 a 50 ruas por cultura
+   - Comprimento de ruas entre 10 e 100 m
+   - 2 a 4 insumos aleatórios por cultura com quantidades realistas
+
+3. Os dados serão exportados automaticamente para um arquivo CSV no diretório `fase1/cap1/data/` 

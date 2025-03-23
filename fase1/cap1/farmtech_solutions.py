@@ -1,5 +1,8 @@
 import math
+import csv
+import os
 from typing import List, Dict, Tuple
+from datetime import datetime
 
 class Cultura:
     def __init__(self, nome: str, area: float, ruas: int, comprimento_rua: float):
@@ -50,6 +53,44 @@ class SistemaAgricola:
                 print("Insumos:")
                 for j, insumo in enumerate(cultura.insumos, 1):
                     print(f"{j}. {insumo['nome']}: {insumo['quantidade']:.2f} L")
+    
+    def exportar_dados_csv(self):
+        # Cria o diretório data se não existir
+        data_dir = "fase1/cap1/data"
+        os.makedirs(data_dir, exist_ok=True)
+        
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = os.path.join(data_dir, f"dados_agricolas_{timestamp}.csv")
+        
+        with open(filename, 'w', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            # Cabeçalho
+            writer.writerow(['Cultura', 'Area', 'Numero_Ruas', 'Comprimento_Rua', 
+                           'Insumo', 'Quantidade'])
+            
+            # Dados
+            for cultura in self.culturas:
+                if cultura.insumos:
+                    for insumo in cultura.insumos:
+                        writer.writerow([
+                            cultura.nome,
+                            f"{cultura.area:.2f}",
+                            cultura.ruas,
+                            f"{cultura.comprimento_rua:.2f}",
+                            insumo['nome'],
+                            f"{insumo['quantidade']:.2f}"
+                        ])
+                else:
+                    writer.writerow([
+                        cultura.nome,
+                        f"{cultura.area:.2f}",
+                        cultura.ruas,
+                        f"{cultura.comprimento_rua:.2f}",
+                        "",
+                        ""
+                    ])
+        
+        print(f"\nDados exportados com sucesso para o arquivo: {filename}")
 
 def menu():
     print("\n=== FarmTech Solutions - Sistema de Gestão Agrícola ===")
@@ -57,7 +98,8 @@ def menu():
     print("2. Saída de dados")
     print("3. Atualizar dados")
     print("4. Deletar dados")
-    print("5. Sair do programa")
+    print("5. Exportar dados para análise estatística")
+    print("6. Sair do programa")
     return input("\nEscolha uma opção: ")
 
 def gerenciar_insumos(cultura: Cultura):
@@ -233,6 +275,8 @@ def main():
             except ValueError:
                 print("\nPor favor, digite um número válido!")
         elif opcao == "5":
+            sistema.exportar_dados_csv()
+        elif opcao == "6":
             print("\nObrigado por usar o FarmTech Solutions!")
             break
         else:
