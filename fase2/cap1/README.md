@@ -68,7 +68,7 @@
 
 ## Diagrama do Modelo 
 
-![Modelo de Dados](modelo.png)
+![Modelo de Dados](assets/modelo.png)
 
 
 ## Regras de Negócio
