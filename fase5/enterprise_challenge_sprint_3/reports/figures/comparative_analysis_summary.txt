@@ -1,0 +1,23 @@
+
+RESUMO ANÁLISE COMPARATIVA - PREDIÇÃO DE FALHAS INDUSTRIAIS
+=========================================================
+
+MELHOR MODELO: External - Logistic Regression
+ROC-AUC: 0.9833
+F1-Score: 0.6219
+Balanced Accuracy: 0.9490
+Average Precision: 0.7550
+
+RANKING ABORDAGENS (ROC-AUC médio):
+1. External: 0.9808
+2. Hybrid: 0.5551
+3. Our: 0.5532
+
+STATUS: PRONTO PARA PILOTO
+
+INSIGHTS PRINCIPAIS:
+- Notebook externo supera abordagem conservadora
+- Feature engineering inteligente melhora performance
+- Necessário coletar mais features relevantes
+
+RECOMENDAÇÃO: PRONTO PARA PILOTO

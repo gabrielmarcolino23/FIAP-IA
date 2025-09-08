@@ -1,0 +1,166 @@
+2025-09-07 21:26:33,216 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 21:26:33,225 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 21:26:33,226 - ERROR - Erro ao conectar ao banco: Parser Error: FOREIGN KEY constraints cannot use CASCADE, SET NULL or SET DEFAULT
+2025-09-07 21:26:33,226 - ERROR - Falha no pipeline ETL: Parser Error: FOREIGN KEY constraints cannot use CASCADE, SET NULL or SET DEFAULT
+2025-09-07 21:26:33,227 - INFO - Conexão com banco fechada
+2025-09-07 21:35:28,513 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 21:35:28,520 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 21:35:28,521 - ERROR - Erro ao conectar ao banco: Parser Error: FOREIGN KEY constraints cannot use CASCADE, SET NULL or SET DEFAULT
+2025-09-07 21:35:28,521 - ERROR - Falha no pipeline ETL: Parser Error: FOREIGN KEY constraints cannot use CASCADE, SET NULL or SET DEFAULT
+2025-09-07 21:35:28,523 - INFO - Conexão com banco fechada
+2025-09-07 21:36:33,050 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 21:36:33,057 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 21:36:33,080 - INFO - Schema criado com sucesso
+2025-09-07 21:36:33,080 - INFO - Carregando dados do CSV: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/data/raw/factory_sensor_simulator_2040.csv
+2025-09-07 21:36:33,558 - INFO - Dados carregados: 500,000 registros, 22 colunas
+2025-09-07 21:36:33,657 - INFO - Memória utilizada: 125.78 MB
+2025-09-07 21:36:33,657 - INFO - Validando qualidade dos dados...
+2025-09-07 21:36:33,865 - INFO - Validação concluída
+2025-09-07 21:36:33,865 - INFO - Iniciando transformação dos dados...
+2025-09-07 21:36:34,084 - INFO - Tabela machines: 500,000 registros
+2025-09-07 21:36:34,085 - INFO - Tabela sensor_readings: 500,000 registros
+2025-09-07 21:36:34,085 - INFO - Tabela maintenance_records: 500,000 registros
+2025-09-07 21:36:34,085 - INFO - Tabela ai_monitoring: 500,000 registros
+2025-09-07 21:36:34,085 - INFO - Tabela machine_specific_sensors: 500,000 registros
+2025-09-07 21:36:34,085 - INFO - Tabela failure_predictions: 500,000 registros
+2025-09-07 21:36:34,087 - INFO - Carregando dados para o banco DuckDB...
+2025-09-07 21:36:34,093 - ERROR - Erro ao carregar dados: Constraint Error: CHECK constraint failed on table machines with expression CHECK((machine_type IN ('Mixer', 'Industrial_Chiller', 'Pick_and_Place', 'Vision_System', 'Shuttle_System', 'Labeler', 'Automated_Screwdriver', 'Shrink_Wrapper')))
+2025-09-07 21:36:34,093 - ERROR - Falha no pipeline ETL: Constraint Error: CHECK constraint failed on table machines with expression CHECK((machine_type IN ('Mixer', 'Industrial_Chiller', 'Pick_and_Place', 'Vision_System', 'Shuttle_System', 'Labeler', 'Automated_Screwdriver', 'Shrink_Wrapper')))
+2025-09-07 21:36:34,101 - INFO - Conexão com banco fechada
+2025-09-07 21:43:11,380 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 21:43:11,389 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 21:43:11,414 - ERROR - Erro ao conectar ao banco: Catalog Error: View with name "vw_ml_dataset" already exists!
+2025-09-07 21:43:11,414 - ERROR - Falha no pipeline ETL: Catalog Error: View with name "vw_ml_dataset" already exists!
+2025-09-07 21:43:11,418 - INFO - Conexão com banco fechada
+2025-09-07 21:43:27,074 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 21:43:27,085 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 21:43:27,108 - INFO - Schema criado com sucesso
+2025-09-07 21:43:27,108 - INFO - Carregando dados do CSV: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/data/raw/factory_sensor_simulator_2040.csv
+2025-09-07 21:43:27,588 - INFO - Dados carregados: 500,000 registros, 22 colunas
+2025-09-07 21:43:27,684 - INFO - Memória utilizada: 125.78 MB
+2025-09-07 21:43:27,684 - INFO - Validando qualidade dos dados...
+2025-09-07 21:43:27,879 - INFO - Validação concluída
+2025-09-07 21:43:27,879 - INFO - Iniciando transformação dos dados...
+2025-09-07 21:43:28,113 - INFO - Tabela machines: 500,000 registros
+2025-09-07 21:43:28,113 - INFO - Tabela sensor_readings: 500,000 registros
+2025-09-07 21:43:28,113 - INFO - Tabela maintenance_records: 500,000 registros
+2025-09-07 21:43:28,113 - INFO - Tabela ai_monitoring: 500,000 registros
+2025-09-07 21:43:28,113 - INFO - Tabela machine_specific_sensors: 500,000 registros
+2025-09-07 21:43:28,113 - INFO - Tabela failure_predictions: 500,000 registros
+2025-09-07 21:43:28,116 - INFO - Carregando dados para o banco DuckDB...
+2025-09-07 21:43:28,817 - INFO - ✓ machines: 500,000 registros inseridos
+2025-09-07 21:43:28,824 - ERROR - Erro ao carregar dados: Constraint Error: CHECK constraint failed on table sensor_readings with expression CHECK((vibration_mms >= 0))
+2025-09-07 21:43:28,824 - ERROR - Falha no pipeline ETL: Constraint Error: CHECK constraint failed on table sensor_readings with expression CHECK((vibration_mms >= 0))
+2025-09-07 21:43:28,828 - INFO - Conexão com banco fechada
+2025-09-07 21:43:48,494 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 21:43:48,505 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 21:43:48,525 - INFO - Schema criado com sucesso
+2025-09-07 21:43:48,525 - INFO - Carregando dados do CSV: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/data/raw/factory_sensor_simulator_2040.csv
+2025-09-07 21:43:49,019 - INFO - Dados carregados: 500,000 registros, 22 colunas
+2025-09-07 21:43:49,116 - INFO - Memória utilizada: 125.78 MB
+2025-09-07 21:43:49,116 - INFO - Validando qualidade dos dados...
+2025-09-07 21:43:49,321 - INFO - Validação concluída
+2025-09-07 21:43:49,321 - INFO - Iniciando transformação dos dados...
+2025-09-07 21:43:49,550 - INFO - Tabela machines: 500,000 registros
+2025-09-07 21:43:49,550 - INFO - Tabela sensor_readings: 500,000 registros
+2025-09-07 21:43:49,550 - INFO - Tabela maintenance_records: 500,000 registros
+2025-09-07 21:43:49,550 - INFO - Tabela ai_monitoring: 500,000 registros
+2025-09-07 21:43:49,550 - INFO - Tabela machine_specific_sensors: 500,000 registros
+2025-09-07 21:43:49,550 - INFO - Tabela failure_predictions: 500,000 registros
+2025-09-07 21:43:49,553 - INFO - Carregando dados para o banco DuckDB...
+2025-09-07 21:43:50,259 - INFO - ✓ machines: 500,000 registros inseridos
+2025-09-07 21:43:50,264 - ERROR - Erro ao carregar dados: Constraint Error: CHECK constraint failed on table sensor_readings with expression CHECK((power_consumption_kw >= 0))
+2025-09-07 21:43:50,264 - ERROR - Falha no pipeline ETL: Constraint Error: CHECK constraint failed on table sensor_readings with expression CHECK((power_consumption_kw >= 0))
+2025-09-07 21:43:50,267 - INFO - Conexão com banco fechada
+2025-09-07 21:44:24,581 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 21:44:24,592 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 21:44:24,612 - INFO - Schema criado com sucesso
+2025-09-07 21:44:24,612 - INFO - Carregando dados do CSV: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/data/raw/factory_sensor_simulator_2040.csv
+2025-09-07 21:44:25,098 - INFO - Dados carregados: 500,000 registros, 22 colunas
+2025-09-07 21:44:25,198 - INFO - Memória utilizada: 125.78 MB
+2025-09-07 21:44:25,198 - INFO - Validando qualidade dos dados...
+2025-09-07 21:44:25,404 - INFO - Validação concluída
+2025-09-07 21:44:25,405 - INFO - Iniciando transformação dos dados...
+2025-09-07 21:44:25,629 - INFO - Tabela machines: 500,000 registros
+2025-09-07 21:44:25,629 - INFO - Tabela sensor_readings: 500,000 registros
+2025-09-07 21:44:25,629 - INFO - Tabela maintenance_records: 500,000 registros
+2025-09-07 21:44:25,629 - INFO - Tabela ai_monitoring: 500,000 registros
+2025-09-07 21:44:25,629 - INFO - Tabela machine_specific_sensors: 500,000 registros
+2025-09-07 21:44:25,629 - INFO - Tabela failure_predictions: 500,000 registros
+2025-09-07 21:44:25,632 - INFO - Carregando dados para o banco DuckDB...
+2025-09-07 21:44:26,344 - INFO - ✓ machines: 500,000 registros inseridos
+2025-09-07 21:44:28,111 - INFO - ✓ sensor_readings: 500,000 registros inseridos
+2025-09-07 21:44:29,131 - INFO - ✓ maintenance_records: 500,000 registros inseridos
+2025-09-07 21:44:30,129 - INFO - ✓ ai_monitoring: 500,000 registros inseridos
+2025-09-07 21:44:31,160 - INFO - ✓ machine_specific_sensors: 500,000 registros inseridos
+2025-09-07 21:44:32,326 - INFO - ✓ failure_predictions: 500,000 registros inseridos
+2025-09-07 21:44:32,326 - INFO - Validando dados carregados...
+2025-09-07 21:44:32,327 - INFO - machines: 500,000 registros
+2025-09-07 21:44:32,327 - INFO - sensor_readings: 500,000 registros
+2025-09-07 21:44:32,328 - INFO - maintenance_records: 500,000 registros
+2025-09-07 21:44:32,328 - INFO - ai_monitoring: 500,000 registros
+2025-09-07 21:44:32,329 - INFO - machine_specific_sensors: 500,000 registros
+2025-09-07 21:44:32,329 - INFO - failure_predictions: 500,000 registros
+2025-09-07 21:44:32,364 - INFO - ✓ Integridade referencial validada
+2025-09-07 21:44:32,370 - INFO - Distribuição de falhas:
+2025-09-07 21:44:32,370 - INFO -   False: 469,968 (93.99%)
+2025-09-07 21:44:32,370 - INFO -   True: 30,032 (6.01%)
+2025-09-07 21:44:32,370 - INFO - === PIPELINE ETL CONCLUÍDO ===
+2025-09-07 21:44:32,370 - INFO - Tempo total: 0:00:07.788858
+2025-09-07 21:44:32,370 - INFO - Banco DuckDB criado: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 21:44:32,381 - INFO - Conexão com banco fechada
+2025-09-07 22:14:03,467 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 22:14:03,471 - ERROR - Erro ao conectar ao banco: IO Error: Could not set lock on file "/home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb": Conflicting lock is held in /snap/datagrip/237/jbr/bin/java (PID 252575) by user acer-nitro. See also https://duckdb.org/docs/stable/connect/concurrency
+2025-09-07 22:14:03,471 - ERROR - Falha no pipeline ETL: IO Error: Could not set lock on file "/home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb": Conflicting lock is held in /snap/datagrip/237/jbr/bin/java (PID 252575) by user acer-nitro. See also https://duckdb.org/docs/stable/connect/concurrency
+2025-09-07 22:17:10,558 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 22:17:10,567 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 22:17:10,592 - ERROR - Erro ao conectar ao banco: Catalog Error: View with name "vw_ml_dataset" already exists!
+2025-09-07 22:17:10,592 - ERROR - Falha no pipeline ETL: Catalog Error: View with name "vw_ml_dataset" already exists!
+2025-09-07 22:17:10,596 - INFO - Conexão com banco fechada
+2025-09-07 22:18:46,008 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 22:18:46,016 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 22:18:46,036 - ERROR - Erro ao conectar ao banco: Catalog Error: View with name "vw_ml_dataset" already exists!
+2025-09-07 22:18:46,037 - ERROR - Falha no pipeline ETL: Catalog Error: View with name "vw_ml_dataset" already exists!
+2025-09-07 22:18:46,040 - INFO - Conexão com banco fechada
+2025-09-07 22:19:07,408 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 22:19:07,417 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 22:19:07,443 - ERROR - Erro ao conectar ao banco: Catalog Error: View with name "vw_ml_dataset" already exists!
+2025-09-07 22:19:07,443 - ERROR - Falha no pipeline ETL: Catalog Error: View with name "vw_ml_dataset" already exists!
+2025-09-07 22:19:07,448 - INFO - Conexão com banco fechada
+2025-09-07 22:19:48,969 - INFO - === INICIANDO PIPELINE ETL ===
+2025-09-07 22:19:48,978 - INFO - Conectado ao banco DuckDB: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 22:19:49,029 - INFO - Schema criado com sucesso
+2025-09-07 22:19:49,029 - INFO - Carregando dados do CSV: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/data/raw/factory_sensor_simulator_2040.csv
+2025-09-07 22:19:49,522 - INFO - Dados carregados: 500,000 registros, 22 colunas
+2025-09-07 22:19:49,623 - INFO - Memória utilizada: 125.78 MB
+2025-09-07 22:19:49,623 - INFO - Validando qualidade dos dados...
+2025-09-07 22:19:49,828 - INFO - Validação concluída
+2025-09-07 22:19:49,828 - INFO - Iniciando transformação dos dados...
+2025-09-07 22:19:50,057 - INFO - Tabela machines: 500,000 registros
+2025-09-07 22:19:50,057 - INFO - Tabela sensor_readings: 500,000 registros
+2025-09-07 22:19:50,057 - INFO - Tabela maintenance_records: 500,000 registros
+2025-09-07 22:19:50,057 - INFO - Tabela ai_monitoring: 500,000 registros
+2025-09-07 22:19:50,057 - INFO - Tabela machine_specific_sensors: 500,000 registros
+2025-09-07 22:19:50,057 - INFO - Tabela failure_predictions: 500,000 registros
+2025-09-07 22:19:50,060 - INFO - Carregando dados para o banco DuckDB...
+2025-09-07 22:19:50,770 - INFO - ✓ machines: 500,000 registros inseridos
+2025-09-07 22:19:52,548 - INFO - ✓ sensor_readings: 500,000 registros inseridos
+2025-09-07 22:19:53,593 - INFO - ✓ maintenance_records: 500,000 registros inseridos
+2025-09-07 22:19:54,661 - INFO - ✓ ai_monitoring: 500,000 registros inseridos
+2025-09-07 22:19:55,698 - INFO - ✓ machine_specific_sensors: 500,000 registros inseridos
+2025-09-07 22:19:56,938 - INFO - ✓ failure_predictions: 500,000 registros inseridos
+2025-09-07 22:19:56,938 - INFO - Validando dados carregados...
+2025-09-07 22:19:56,939 - INFO - machines: 500,000 registros
+2025-09-07 22:19:56,939 - INFO - sensor_readings: 500,000 registros
+2025-09-07 22:19:56,939 - INFO - maintenance_records: 500,000 registros
+2025-09-07 22:19:56,940 - INFO - ai_monitoring: 500,000 registros
+2025-09-07 22:19:56,940 - INFO - machine_specific_sensors: 500,000 registros
+2025-09-07 22:19:56,941 - INFO - failure_predictions: 500,000 registros
+2025-09-07 22:19:57,007 - INFO - ✓ Integridade referencial validada
+2025-09-07 22:19:57,013 - INFO - Distribuição de falhas:
+2025-09-07 22:19:57,014 - INFO -   False: 469,968 (93.99%)
+2025-09-07 22:19:57,014 - INFO -   True: 30,032 (6.01%)
+2025-09-07 22:19:57,014 - INFO - === PIPELINE ETL CONCLUÍDO ===
+2025-09-07 22:19:57,014 - INFO - Tempo total: 0:00:08.044814
+2025-09-07 22:19:57,014 - INFO - Banco DuckDB criado: /home/acer-nitro/FIAP-IA/fase5/enterprise_challenge_sprint_3/db/hermes_reply.duckdb
+2025-09-07 22:19:57,025 - INFO - Conexão com banco fechada
