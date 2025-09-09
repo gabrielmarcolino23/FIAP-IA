@@ -1,3 +1,0 @@
-comparative_analysis
-etl
-ml
