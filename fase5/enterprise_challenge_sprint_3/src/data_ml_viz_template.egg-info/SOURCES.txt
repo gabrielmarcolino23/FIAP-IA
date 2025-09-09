@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/comparative_analysis.py
+src/data_ml_viz_template.egg-info/PKG-INFO
+src/data_ml_viz_template.egg-info/SOURCES.txt
+src/data_ml_viz_template.egg-info/dependency_links.txt
+src/data_ml_viz_template.egg-info/requires.txt
+src/data_ml_viz_template.egg-info/top_level.txt
+src/etl/load_to_duckdb.py
+src/ml/model_trainer.py

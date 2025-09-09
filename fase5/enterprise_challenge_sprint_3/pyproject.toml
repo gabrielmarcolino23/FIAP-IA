@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-ml-viz-template"
+version = "0.1.0"
+description = "Projeto base para processamento de dados, ML e visualização."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Seu Nome", email = "voce@example.com" }]
+
+# Núcleo + utilitários sempre instalados
+dependencies = [
+  "duckdb>=0.9.0",
+  "pandas>=2.0.0",
+  "numpy>=1.24.0",
+  "tqdm>=4.64.0"
+]
+
+# Grupos opcionais (instale com: pip install .[ml], .[viz], .[notebook])
+[project.optional-dependencies]
+ml = [
+  "scikit-learn>=1.3.0"
+]
+viz = [
+  "matplotlib>=3.7.0",
+  "seaborn>=0.12.0"
+]
+notebook = [
+  "jupyter>=1.0.0",
+  "ipykernel>=6.0.0"
+]
