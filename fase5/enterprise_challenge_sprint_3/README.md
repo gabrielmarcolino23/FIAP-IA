@@ -1,3 +1,5 @@
+Link: https://youtu.be/ojr28aX28U8
+
 # Challenge Hermes Reply - Fase 5 🏭
 
 ## Sistema de Predição de Falhas Industriais com Machine Learning
