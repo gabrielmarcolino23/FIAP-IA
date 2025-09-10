@@ -21,7 +21,7 @@ Este projeto foi desenvolvido para a **FarmTech Solutions**, uma empresa que pre
 ## 📊 Dataset
 
 - **Fonte:** `crop_yield.csv`
-- **Registros:** 157 observações
+- **Registros:** 156 observações
 - **Culturas:** Cocoa beans, Oil palm fruit, Rice paddy, Rubber natural
 - **Variáveis:**
   - Precipitação (mm/dia)
@@ -74,19 +74,24 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ## 📈 Principais Resultados
 
 ### Análise Exploratória
-- **Correlações identificadas:** [A ser preenchido após execução]
-- **Distribuições das variáveis:** [A ser preenchido após execução]
-- **Padrões por cultura:** [A ser preenchido após execução]
+- **Correlações identificadas:** 
+  - Precipitação vs Rendimento: -0.208
+  - Umidade Específica vs Rendimento: 0.209
+  - Umidade Relativa vs Rendimento: 0.134
+  - Temperatura vs Rendimento: 0.205
+- **Distribuições das variáveis:** Dataset balanceado com 39 registros por cultura
+- **Padrões por cultura:** Rubber natural apresenta maior variabilidade no rendimento
 
 ### Clusterização
-- **Número ótimo de clusters:** [A ser preenchido após execução]
-- **Padrões identificados:** [A ser preenchido após execução]
-- **Outliers detectados:** [A ser preenchido após execução]
+- **Número ótimo de clusters:** 4 clusters identificados via método do cotovelo
+- **Padrões identificados:** Clusters distribuídos uniformemente entre as culturas (12, 68, 36, 40 registros)
+- **Outliers detectados:** 16 outliers (10.3% dos dados) distribuídos igualmente entre as culturas
 
 ### Modelos Preditivos
-- **Melhor modelo:** [A ser preenchido após execução]
-- **R² alcançado:** [A ser preenchido após execução]
-- **RMSE:** [A ser preenchido após execução]
+- **Melhor modelo:** Random Forest Regressor
+- **R² alcançado:** 0.994 (99.4% de explicação da variância)
+- **RMSE:** 4.640,26 toneladas/hectare
+- **Feature mais importante:** Crop_Encoded (0.942) - tipo de cultura é o fator mais determinante
 
 ---
 
@@ -101,7 +106,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ### Comparação de Regiões
 | Critério | São Paulo (BR) | Virgínia Norte (EUA) | Recomendação |
 |----------|----------------|----------------------|--------------|
-| **Custo Mensal** | [A ser preenchido] | [A ser preenchido] | [A ser preenchido] |
+| **Custo Mensal** | 6,13 | 2,8| Virgínia Norte (EUA)|
 | **Latência** | Baixa (local) | Alta (internacional) | São Paulo |
 | **Conformidade Legal** | ✅ LGPD Compliant | ❌ Restrições | São Paulo |
 | **Acesso aos Sensores** | Rápido | Lento | São Paulo |
